@@ -16,7 +16,10 @@
 /* carousel */
 .carousel-inner>.item>img {
   max-height: 30em;s
+  margin: 0 auto;
 }
+
+
 
 @media (max-width: 600px) {
     .carousel-caption {
