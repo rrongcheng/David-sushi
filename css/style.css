@@ -26,6 +26,9 @@
         display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
 }
+#myCarousel {
+  padding-top: 50px;
+}
 
 /* Section Special */
 #special .panel {
