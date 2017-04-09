@@ -1,0 +1,164 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>David's Sushi Noodle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+
+    <!-- webfonts -->
+    <link href='//fonts.googleapis.com/css?family=Asap:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <!-- webfonts -->
+
+    <script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?sensor=false&#038;ver=3.9.8'></script>
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+    <!-- Section Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">David's Sushi Noodle</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#myPage">Home</a></li>
+            <li><a href="#special">Special</a></li>
+            <li><a href="#findus">Find us</a></li>
+            <li><a href="#menu">Menu</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Section Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="images/dish_01.jpg" alt="Dish 01">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/dish_02.jpg" alt="Dish 02">
+          <div class="carousel-caption">
+          </div>
+        </div>
+        <div class="item">
+          <img src="images/dish_03.jpg" alt="Dish 03">
+          <div class="carousel-caption">
+          </div>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Section Special -->
+    <div id="special" class="container text-center">
+      <h3>Special</h3>
+    </div>
+    <!-- Section Menu -->
+    <div id="menu" class="bg-2 text-center">
+      <h3>Menu</h3>
+      <img src="images/menu01.png">
+      <img src="images/menu02.png">
+      <div class="row">
+          <div class="col-sm-4">
+            <a href="#demo" data-toggle="collapse">
+              <img src="images/dish_01.jpg" class="img-circle person" alt="Random Name">
+            </a>
+            <div id="demo" class="collapse">
+              <p>Prawn & Veg.</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <a href="#demo2" data-toggle="collapse">
+              <img src="images/dish_02.jpg" class="img-circle person" alt="Random Name">
+            </a>
+            <div id="demo2" class="collapse">
+              <p>Teriyaki Chicken Roll</p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <a href="#demo3" data-toggle="collapse">
+              <img src="images/dish_03.jpg" class="img-circle person" alt="Random Name">
+            </a>
+            <div id="demo3" class="collapse">
+              <p>Teriyaki Chicken Roll</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+    <!-- Section Find us -->
+    <div id="findus" class="bg-1">
+      <div class="container">
+        <h3 class="text-center">Find Us</h3>
+        <p class="text-center">SHOP 1 80 GRAND BOULEVARD, JOONDALUP, WA 6027</p>
+        <p class="text-center">
+          <a href="tel:0893014556">(08) 9301 4556</a>
+        </p>
+
+        <h4 class="text-center">Trading Hours</h4>
+        <ul class="list-group">
+          <li class="list-group-item">Monday 11:00-15:00 17:00-21:00</li>
+          <li class="list-group-item">Tuesday 17:00-21:00</li>
+          <li class="list-group-item">Wednesday 11:00-15:00 17:00-21:00</li>
+          <li class="list-group-item">Thursday 11:00-15:00 17:00-21:00</li>
+          <li class="list-group-item">Friday 11:00-15:00 17:00-21:00</li>
+          <li class="list-group-item">Saturday 11:00-15:00 17:00-21:00</li>
+          <li class="list-group-item">Sunday 17:00-21:00</li>
+        </ul>
+      </div>
+      <div id="googleMap"></div>
+      <script>
+        function myMap() {
+          var myCenter = new google.maps.LatLng(-31.739697, 115.769557);
+          var mapProp = {center:myCenter, zoom:17, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+          var marker = new google.maps.Marker({position:myCenter});
+          marker.setMap(map);
+        }
+      </script>
+    </div>
+    <!-- Footer-->
+    <footer class="text-center">
+      <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="To top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+    </footer>
+    <script>
+      $(document).ready(function(){
+          // Initialize Tooltip
+          $('[data-toggle="tooltip"]').tooltip();
+      })
+    </script>
+  </body>
+
+</html>
