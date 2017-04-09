@@ -1,5 +1,5 @@
 .container {
-    padding: 80px 120px;
+    padding: 80px 20px;
 }
 .person {
     border: 10px solid transparent;
@@ -11,11 +11,58 @@
 .person:hover {
     border-color: #f1f1f1;
 }
+
+
+/* carousel */
+.carousel-inner>.item>img {
+  max-height: 30em;s
+}
+
 @media (max-width: 600px) {
     .carousel-caption {
         display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
 }
+
+/* Section Special */
+#special .panel {
+    border-radius:0;
+    transition: box-shadow 0.5s;
+}
+
+#special .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+#special .panel-footer {
+    color: #f4511e;
+}
+
+#special .panel-heading {
+
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#special .panel-body{
+  min-height: 15em;
+}
+
+#special .panel-footer {
+    background-color: #fff;
+}
+
+#special .panel-footer h3 {
+    font-size: 32px;
+}
+
+#special .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+}
+
 .bg-1 {
     background: #2d2d30;
     color: #bdbdbd;
@@ -29,7 +76,7 @@
 }
 .bg-2 h3 {color: #ED1C24;}
 
-#googleMap {
+#googleMap iframe {
     width: 100%; /* Span the entire width of the screen */
     height: 400px; /* Set the height to 400 pixels */
     /*
